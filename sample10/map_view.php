@@ -8,7 +8,7 @@ try {
     //dbname=gs_db
     //host=localhost
     //Password:MAMP='root', XAMPP=''
-    $pdo = new PDO('mysql:dbname=map_db;charset=utf8;host=localhost','root','root');
+    $pdo = new PDO ('mysql:dbname=map_db;charset=utf8;host=localhost','root','root');
 } catch (PDOException $e) {
     exit('DB_Connect Error:'.$e->getMessage()); //DB接続：Error表示
 }
