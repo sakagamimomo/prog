@@ -133,7 +133,7 @@ function GetMap(){
 for(let i=0; i<len; i++){
     //* 最初にpin,次にinfoboxHtml
     map.pin(lat[i],lon[i],"#ff0000");
-    let h = '<div>'+name[i]+'<br>'+input_date[i]+'<br>'+comment[i]+'<br><img src="upload/'+img[i]+'"></div>';
+    let h = '<div style="background-color:#fff;border:5px solid #fff;">'+name[i]+'<br>'+input_date[i]+'<br>'+comment[i]+'<br><img src="upload/'+img[i]+'"></div>';
     map.infoboxHtml(lat[i],lon[i], h);
 }
     //* map.changeMapを使って最後の座標を中心に表示する！
